@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container header__container">
       <h5 data-aos="zoom-in">Hello I'm</h5>
       <h1 data-aos="zoom-in">ALIYA AKHTAR</h1>
-      <h5 data-aos="zoom-in" className="text-light">Web Developer</h5>
+      <h5 data-aos="zoom-in" className="text-light">AI / ML Enthusiast</h5>
       <CTA/>
       <HeaderSocials/>
       <div data-aos="fade-up" className="me">

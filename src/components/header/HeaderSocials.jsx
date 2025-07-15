@@ -11,9 +11,9 @@ const HeaderSocials = () => {
   }, []);
   return (
     <div data-aos = "zoom-in-right" className='header__socials'>
-      <a href="https://linkedin.com" target="_blank"><BsLinkedin/></a>
-      <a href="https://github.com" target="_blank"><FaGithub/></a>
-      <a href="https://facebook.com" target="_blank"><BsFacebook/></a>
+      <a href="https://www.linkedin.com/in/aliyaakhtar/" target="_blank"><BsLinkedin/></a>
+      <a href="https://github.com/AliyaAkhtar" target="_blank"><FaGithub/></a>
+      {/* <a href="https://facebook.com" target="_blank"><BsFacebook/></a> */}
     </div>
   )
 }

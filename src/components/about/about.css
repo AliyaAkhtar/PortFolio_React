@@ -62,6 +62,75 @@
     color: var(--color-light);
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(98, 98, 98, 0.4);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px);
+}
+
+.modal {
+  background: transparent;
+  color: #333;
+  max-width: 1000px;
+  width: 90%;
+  padding: 2rem;
+  border-color: #4b0082;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+  z-index: -1;
+  opacity: 10;
+}
+
+.modal h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #f05a66;
+}
+
+.modal p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal .btn-primary {
+  margin-top: 1.5rem;
+  background-color: #f05a66;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.5rem;
+ 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal .btn-primary:hover {
+  background-color: #e24755;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width:1024px) {
  .about__container{
     grid-template-columns: 1fr;

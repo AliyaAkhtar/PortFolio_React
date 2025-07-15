@@ -20,7 +20,7 @@ const Education = () => {
                <h3>KARACHI PUBLIC SCHOOL</h3>
             </li>
             <li>
-               <h3 className='rank'>Percentage: 92.7%</h3>
+               <h3 className='rank'>Percentage: 93%</h3>
             </li>
             <li>
                <h3>2020</h3>
@@ -36,7 +36,7 @@ const Education = () => {
                <h3>BAMM PECHS GOVT COLLEGE FOR WOMEN</h3>
             </li>
             <li>
-               <h3 className='rank'>Percentage: 93.4%</h3>
+               <h3 className='rank'>Percentage: 93.72%</h3>
             </li>
             <li>
                <h3>2022</h3>
@@ -52,7 +52,7 @@ const Education = () => {
                <h3>NED UNIVERISTY OF ENGINEERING AND TECHNOLOGY</h3>
             </li>
             <li>
-               <h3 className='rank'>Current CGPA: 3.90</h3>
+               <h3 className='rank'>Current CGPA: 3.894</h3>
             </li>
             <li>
                <h3> 2022-Present</h3>
