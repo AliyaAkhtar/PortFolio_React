@@ -1,11 +1,11 @@
-.experience__container{
+/* .experience__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 .experience__container > div{
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -17,30 +17,17 @@
     margin-bottom: 2rem;
     color: var(--color-primary);
 }
-/* .experience__content{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    row-gap: 2rem;
-} */
+
 .experience__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
+  column-gap: 0.5rem;
   row-gap: 1.5rem;
 }
 
-/* .experience__details{
-    display: flex;
-    gap: 0.5rem;
-}
-.experience__details-icon{
-    margin-top: 6px;
-    color: var(--color-primary);
-} */
-
 .experience__details {
   display: flex;
-  align-items: center; /* ensures icon and text are aligned */
+  align-items: center; 
   gap: 0.75rem;
 }
 
@@ -60,30 +47,126 @@
   }
   .experience__content{
     padding: 1rem;
+    grid-template-columns: repeat(2, 1fr); 
   }
  
 }
 @media screen and (max-width:600px) {
     .experience__container{
         gap: 1rem;
+        margin-left: 0px;
     }
     .experience__container> div{
         width: 100%;
         padding: 2rem 1rem;
     }
+    .experience__content {
+      grid-template-columns: 1fr; 
+    }
   
       
+} */
+
+
+/* Skills Section Layout */
+#skill {
+  padding: 2rem 1rem;
+  background: var(--color-bg);
+  color: var(--color-white);
 }
 
+.skill-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* .skill-header h5 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.skill-header h2 {
+  font-size: 2.5rem;
+} */
+
+/* Experience Container */
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* column-gap: 0.25rem; */
+}
+
+/* Cards */
+.experience__container > div {
+  background: linear-gradient(45deg, var(--color-bg-variant), transparent);
+  padding: 2.4rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  width: 100%;
+  max-width: 100%;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* Skill List */
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.experience__details {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.experience__details-icon {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+/* Responsive Design */
 @media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
   .experience__content {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .experience__container {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
   .experience__content {
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .skill-header h2 {
+    font-size: 2rem;
   }
 }
-
