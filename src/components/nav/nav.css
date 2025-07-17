@@ -1,4 +1,4 @@
-nav{
+/* nav{
     background: rgba(0,0,0,0.3);
     width: max-content;
     display: block;
@@ -29,4 +29,55 @@ nav a:hover{
 nav a.active{
     background: var(--color-primary);
     color: var(--color-bg);
+} */
+
+
+nav {
+  background: rgba(0,0,0,0.3);
+  width: auto; /* changed from max-content */
+  max-width: 95vw; /* prevent overflow on small screens */
+  padding: 0.7rem 1rem; /* reduce horizontal padding */
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  overflow-x: auto; /* allow horizontal scroll if needed */
+  scrollbar-width: none; /* hide scrollbar on Firefox */
+}
+
+/* Hide scrollbar on Webkit browsers */
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+  flex-shrink: 0; /* prevent shrinking in scroll */
+}
+
+nav a:hover {
+  background: rgba(0,0,0,0.3);
+}
+
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* Optional: On very small screens, reduce icon size */
+@media screen and (max-width: 400px) {
+  nav a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
 }
